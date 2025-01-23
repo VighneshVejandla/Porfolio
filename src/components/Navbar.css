@@ -1,42 +1,93 @@
-nav {
-    background-color: #111010;
-    padding: 1rem 0; /* Vertical padding only */
-    width: 100%; /* Full width of the page */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: fixed;
-    top: 0;  /* Changed from bottom to top */
-    left: 0;
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    background-color: rgba(51, 51, 51, 0); /* Semi-transparent black */
+    color: white;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    position: sticky;
+    top: 0;
     z-index: 1000;
+    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
 }
 
-ul {
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Great Vibes", serif;
+    color: #ffffff;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.nav-links {
     list-style: none;
+    display: flex;
+    gap: 2rem;
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: flex-end; /* Align links to the left */
-    align-items: center;
-    gap: 1.5rem;
-    padding-right: 2rem; /* Add padding to create space from the right edge */
 }
 
-li {
+.nav-links li {
+    position: relative;
+}
+
+
+ .nav-links li a {
     display: inline-block;
-}
-
-li a {
-    color: white;
+    color: #0FFCBE;
     text-decoration: none;
-    font-size: 1rem;
-    font-weight: 500;
-    padding: 0.5rem 1rem;
-    transition: all 0.3s ease;
+    transition: transform 0.1s ease;
 }
 
-li a:hover,
-li a:focus {
-    color: #fff;
-    background-color: #555;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    outline: none;
+.nav-links li a:hover {
+    animation: jiggle 0.3s infinite alternate;
+    color: #0FFCBE;
+}
+
+@keyframes jiggle {
+    0% {
+        transform: rotate(-5deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-5deg);
+    }
+}
+
+.nav-links li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #0FFCBE;
+    transition: width 0.3s;
+    margin: auto;
+}
+
+.nav-links li a:hover::after {
+    width: 100%;
+}
+
+
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
