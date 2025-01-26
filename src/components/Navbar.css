@@ -3,16 +3,16 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px 5%;
-    background-color: rgba(51, 51, 51, 0); /* Semi-transparent black */
-    color: white;
+    background: linear-gradient(45deg, rgb(0, 0, 0) 30%, rgb(192, 192, 192) 30%);
+    color: rgb(227, 227, 227);
     font-size: 1.2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
-    backdrop-filter: blur(5px); /* Adds a blur effect to the background */
 }
-
 
 .logo {
     font-size: 2.5rem;
@@ -34,45 +34,51 @@
     position: relative;
 }
 
-
- .nav-links li a {
-    display: inline-block;
-    color: #0FFCBE;
+.nav-links li a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #020202;
     text-decoration: none;
-    transition: transform 0.1s ease;
+    transition: transform 0.1s ease, color 0.2s ease;
+    position: relative;
 }
 
 .nav-links li a:hover {
     animation: jiggle 0.3s infinite alternate;
-    color: #0FFCBE;
+    color: #000000;
 }
 
 @keyframes jiggle {
-    0% {
-        transform: rotate(-5deg);
-    }
-    50% {
-        transform: rotate(5deg);
-    }
-    100% {
-        transform: rotate(-5deg);
-    }
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
 }
 
 .nav-links li a::after {
     content: '';
-    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
     width: 0;
     height: 2px;
-    background: #0FFCBE;
-    transition: width 0.3s;
-    margin: auto;
+    background-color: #000000;
+    transition: width 0.3s ease;
 }
 
 .nav-links li a:hover::after {
     width: 100%;
 }
 
+.nav-links .nav-icon {
+    width: 18%;
+    font-size: 1.5rem;
+    transition: transform 0.5s ease;
+}
+
+.nav-links li:hover .nav-icon {
+    transform: rotate(360deg);
+}
 
 
 @media (max-width: 768px) {
