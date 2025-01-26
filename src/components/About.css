@@ -1,14 +1,5 @@
-:root {
-  --primary-bg: #0a0a0f;
-  --secondary-bg: #121219;
-  --text-color: #e0e0e0;
-  --accent-color: #1e6bff;
-  --accent-hover: #4a90e2;
-  --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
 .about-section {
-  color: var(--text-color);
+  color: #e0e0e0;
   padding: 80px 40px;
   min-height: 100vh;
   position: relative;
@@ -22,11 +13,6 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle at top right, 
-    rgba(30, 107, 255, 0.1), 
-    transparent 50%
-  );
   z-index: 1;
 }
 
@@ -57,11 +43,10 @@
   border-radius: 3px;
 }
 
-
 .section-heading {
   font-size: 2.8rem;
   margin: 60px 0 40px;
-  color: var(--accent-color);
+  color: #1e6bff;
   text-align: center;
   position: relative;
   font-weight: 600;
@@ -75,33 +60,31 @@
   transform: translateX(-50%);
   width: 150px;
   height: 5px;
-  background: linear-gradient(to right, var(--accent-color), var(--accent-hover));
+  background: linear-gradient(to right, #1e6bff, #4a90e2);
   border-radius: 10px;
 }
 
-.about-me-text{
+.about-me-text {
   width: 70%;
   font-size: 1.2rem;
   line-height: 1.8;
-  color: var(--text-color);
+  color: #e0e0e0;
   opacity: 0.8;
   margin-bottom: 20px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  transition: var(--transition);
-  background: linear-gradient(145deg, var(--secondary-bg), #0e0e15);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  background: linear-gradient(145deg, #121219, #0e0e15);
   border-radius: 20px;
   padding: 20px;
   text-align: center;
 }
 
-.about-me-text:hover{
-  color: var(--accent-hover);
+.about-me-text:hover {
+  color: #4a90e2;
   opacity: 1;
   transform: translateY(-5px);
-  box-shadow: 
-    0 15px 30px rgba(30, 107, 255, 0.6),
-    0 10px 20px rgba(30, 107, 255, 0.05);
+  box-shadow: 0 15px 30px rgba(30, 107, 255, 0.6), 0 10px 20px rgba(30, 107, 255, 0.05);
 }
 
 .education-container {
@@ -114,10 +97,10 @@
 .education-item {
   display: flex;
   align-items: center;
-  background: linear-gradient(145deg, var(--secondary-bg), #0e0e15);
+  background: linear-gradient(145deg, #121219, #0e0e15);
   padding: 40px;
   border-radius: 20px;
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   width: 80%;
   gap: 50px;
   border: 1px solid rgba(30, 107, 255, 0.1);
@@ -131,13 +114,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: radial-gradient(
-    circle at top left, 
-    rgba(30, 107, 255, 0.05), 
-    transparent 50%
-  );
+  background: radial-gradient(circle at top left, rgba(30, 107, 255, 0.05), transparent 50%);
   opacity: 0;
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .education-item:hover::before {
@@ -146,9 +125,7 @@
 
 .education-item:hover {
   transform: translateY(-15px);
-  box-shadow: 
-    0 25px 50px rgba(30, 107, 255, 0.6),
-    0 15px 30px rgba(30, 107, 255, 0.1);
+  box-shadow: 0 25px 50px rgba(30, 107, 255, 0.6), 0 15px 30px rgba(30, 107, 255, 0.1);
 }
 
 .education-image {
@@ -156,7 +133,7 @@
   height: 280px;
   border-radius: 15px;
   object-fit: cover;
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .education-item:hover .education-image {
@@ -170,7 +147,7 @@
 
 .education-content h3 {
   font-size: 2.2rem;
-  color: var(--accent-color);
+  color: #1e6bff;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
@@ -182,11 +159,11 @@
 }
 
 .skill-item {
-  background: linear-gradient(145deg, var(--secondary-bg), #0e0e15);
+  background: linear-gradient(145deg, #121219, #0e0e15);
   padding: 30px;
   border-radius: 20px;
   text-align: center;
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
   border: 1px solid rgba(30, 107, 255, 0.1);
@@ -199,13 +176,9 @@
   left: -50%;
   width: 200%;
   height: 200%;
-  background: radial-gradient(
-    circle at center, 
-    rgba(30, 107, 255, 0.05), 
-    transparent 50%
-  );
+  background: radial-gradient(circle at center, rgba(30, 107, 255, 0.05), transparent 50%);
   opacity: 0;
-  transition: var(--transition);
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .skill-item:hover::after {
@@ -214,16 +187,14 @@
 
 .skill-item:hover {
   transform: translateY(-15px) scale(1.05);
-  box-shadow: 
-    0 25px 50px rgba(30, 107, 255, 0.6),
-    0 15px 30px rgba(30, 107, 255, 0.1);
+  box-shadow: 0 25px 50px rgba(30, 107, 255, 0.6), 0 15px 30px rgba(30, 107, 255, 0.1);
 }
 
 .skill-item i {
   font-size: 3.5rem;
   margin-bottom: 20px;
-  color: var(--accent-color);
-  transition: var(--transition);
+  color: #1e6bff;
+  transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .skill-item:hover i {
@@ -234,14 +205,14 @@
   display: block;
   font-size: 1.4rem;
   font-weight: 600;
-  color: var(--text-color);
+  color: #e0e0e0;
   margin-bottom: 20px;
   letter-spacing: 1px;
 }
 
 .skill-bar {
   width: 100%;
-  background: rgba(255,255,255,0.05);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 10px;
   height: 12px;
   overflow: hidden;
@@ -251,36 +222,66 @@
 .skill-level {
   height: 100%;
   border-radius: 10px;
-  background: linear-gradient(to right, var(--accent-color), var(--accent-hover));
+  background: linear-gradient(to right, #1e6bff, #4a90e2);
   transition: width 1.5s ease-in-out;
 }
 
 .skill-percentage {
   font-size: 1rem;
-  color: var(--text-color);
+  color: #e0e0e0;
   opacity: 0.7;
   font-weight: 500;
 }
 
 @media (max-width: 768px) {
   .main-heading {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   .section-heading {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .education-item {
     flex-direction: column;
-    text-align: center;
-    width: 100%;
-    gap: 30px;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .education-content h3 {
+    font-size: 1.5rem;
   }
 
   .education-image {
     width: 100%;
-    max-width: 350px;
-    margin: 0 0 20px;
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+
+  .about-me-text {
+    font-size: 0.7rem;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .skills-container {
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+  }
+
+  .skill-item {
+    padding: 15px;
+  }
+
+  .skill-item i {
+    font-size: 2rem;
+  }
+
+  .skill-item span {
+    font-size: 1rem;
+  }
+
+  .skill-percentage {
+    font-size: 0.8rem;
   }
 }

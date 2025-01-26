@@ -22,3 +22,20 @@ html, body{
 #root::-webkit-scrollbar {
   display: none;
 }
+
+@media (max-width: 768px) {
+  html, body {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 50%, rgb(192, 192, 192) 50%);
+  }
+  
+  #root {
+    overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  }
+}
+
+@media (max-width: 480px) {
+  html, body {
+    background: linear-gradient(180deg, rgb(0, 0, 0) 60%, rgb(192, 192, 192) 40%);
+  }
+} 

@@ -1,35 +1,40 @@
 .home-section {
-    height: 100vh;
     display: flex;
-    gap: 20%;
+    flex-direction: column;
     align-items: center;
-    padding: 0 20px;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
     color: white;
-    height: 139%;
-    position: relative;
-    padding-top: 2%;
-    z-index: 0;
-
+    text-align: center;
+    padding-top: 100px;
 }
 
 .home-container {
-    max-width: 50%;
-    text-align: center;
+    max-width: 100%;
+    width: 100%;
     padding: 20px;
-    padding-left: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .home-container h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 20px;
     font-weight: bold;
 }
 
-.home-container p {
-    font-size: 1.2rem;
+.home-container .paragraph {
+    font-size: 1.1rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    max-width: 600px;
+    background-color: #000000;
+    padding: 10px;
+    border-radius: 30px;
 }
+
 
 .home-btn {
     display: inline-block;
@@ -39,53 +44,84 @@
     text-decoration: none;
     border-radius: 50px;
     border: 2px solid white;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .home-btn:hover {
     transform: scale(1.1);
     box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
     background-color: #333;
-    color: #fff;
 }
 
 .image {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 250px;
+    height: 250px;
     background-image: url('../Photos/Avatar.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
-    border-radius: 10px;
-    height: 500px;
-    width: 400px;
-    flex-shrink: 0;
+    border-radius: 50%;
+    margin: 20px 0;
 }
+
 .social-links {
-    margin-top: 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
+    margin-top: 20px;
 }
 
-
 .social-links a {
-    display: inline-block;
-    font-size: 1.5rem;
-    color: #fff;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-radius: 50%;
-    border: 2px solid white;
-    width: 50px;
-    height: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    border: 2px solid white;
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+    background-color: #000000;
+    color: white;
 }
 
 .social-links a:hover {
     transform: scale(1.1);
     box-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
+
+@media (min-width: 768px) {
+    .home-section {
+        flex-direction: row;
+        gap: 5%;
+    }
+
+    .home-container {
+        max-width: 50%;
+        text-align: left;
+        align-items: flex-start;
+        padding-left: 50px;
+    }
+
+    .home-container h1 {
+        font-size: 3rem;
+    }
+
+    .home-container p {
+        font-size: 1.2rem;
+    }
+
+    .image {
+        width: 450px;
+        height: 550px;
+        border-radius: 10px;
+    }
+
+    .social-links a {
+        width: 50px;
+        height: 50px;
+        font-size: 1.5rem;
+    }
 }

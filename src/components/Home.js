@@ -1,16 +1,18 @@
 import React from 'react';
 import './Home.css';
 import Resume from './Vighnesh_Vejandla_Resume.pdf';
+import avatar from '../Photos/Avatar.png'
+
 const Home = () => {
   return (
     <>
     <section className="home-section" id="home">
       <div className="home-container">
       <h1>Welcome to my Portfolio</h1>
-        <p>
+        <p className='paragraph'>
           Hi, I'm Vighnesh Vejandla, a software development enthusiast with a strong foundation in React and backend development. I specialize in crafting seamless and efficient web applications.
         </p>
-        <p>
+        <p className='paragraph'>
           Dive into my projects, get insights into my journey, and don't hesitate to reach out for collaboration or inquiries!
         </p>
         <a href={Resume} className="home-btn" download="Vighnesh_Vejandla_Resume.pdf">Download my Resume</a>
@@ -26,7 +28,7 @@ const Home = () => {
           </a>
         </div>
       </div>
-      <div className="image"></div>
+        <img src={avatar} className='image' alt='Vighnesh vejandla'></img>
     </section>
   </>
   );
