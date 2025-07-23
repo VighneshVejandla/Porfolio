@@ -1,80 +1,90 @@
-import React from 'react';
-import './Projects.css';
-import Kunban from '../Photos/kunban-board.jpg';
-import RRS from '../Photos/RRS.jpg'
-import TradeMarkia from '../Photos/trademarkia.jpg'
-import PortfolioTracker from '../Photos/Portfolio_tracker.jpg'
-import LOL from '../Photos/LOL.png'
-import GoLang from '../Photos/GoLang.jpg'
-import BlueStock from '../Photos/BlueStock.jpeg'
-import ChessGame from '../Photos/ChessGame.jpg'
-import AquaCulture from '../Photos/AquaCulture.jpg'
+import React from "react";
+import "./Projects.css";
+import Kunban from "../Photos/kunban-board.jpg";
+import RRS from "../Photos/RRS.jpg";
+import TradeMarkia from "../Photos/trademarkia.jpg";
+import PortfolioTracker from "../Photos/Portfolio_tracker.jpg";
+import LOL from "../Photos/LOL.png";
+import GoLang from "../Photos/GoLang.jpg";
+import BlueStock from "../Photos/BlueStock.jpeg";
+import ChessGame from "../Photos/ChessGame.jpg";
+import AquaCulture from "../Photos/AquaCulture.jpg";
 
 const Projects = () => {
   const projectList = [
     {
-      title: 'Kanban Board',
-      description: 'A ReactJS application implementing a Kanban board for task management. Users can add, move, edit, and delete tasks across columns.',
-      languages: ['ReactJS', 'CSS'],
+      title: "Kanban Board",
+      description:
+        "A ReactJS application implementing a Kanban board for task management. Users can add, move, edit, and delete tasks across columns.",
+      languages: ["ReactJS", "CSS"],
       image: Kunban,
-      github: 'https://github.com/VighneshVejandla/Kunban-Board.git',
+      github: "https://github.com/VighneshVejandla/Kunban-Board.git",
     },
     {
-      title: 'Restaurant Reservation System',
-      description: 'A React app to book and manage restaurant reservations with a modern user interface.',
-      languages: ['ReactJS', 'CSS', 'JavaScript'],
+      title: "Restaurant Reservation System",
+      description:
+        "A React app to book and manage restaurant reservations with a modern user interface.",
+      languages: ["ReactJS", "CSS", "JavaScript"],
       image: RRS,
-      github: 'https://github.com/VighneshVejandla/MERN-RESTAURANT-RESRVATION',
+      github: "https://github.com/VighneshVejandla/MERN-RESTAURANT-RESRVATION",
     },
     {
-      title: 'Trademakeia Homepage',
-      description: 'A responsive homepage replica of Trademakeia with working APIs.',
-      languages: ['HTML', 'CSS', 'JavaScript'],
+      title: "Trademakeia Homepage",
+      description:
+        "A responsive homepage replica of Trademakeia with working APIs.",
+      languages: ["HTML", "CSS", "JavaScript"],
       image: TradeMarkia,
-      link: 'https://trademakeia-demo.com',
-      github: 'https://github.com/VighneshVejandla/21bce7609',
+      link: "https://trademakeia-demo.com",
+      github: "https://github.com/VighneshVejandla/21bce7609",
     },
     {
-      title: 'Portfolio Tracker',
-      description: 'A full-stack application to manage and track stock portfolio holdings with real-time stock price integration.',
-      languages: ['ReactJS', 'Java', 'Spring Boot', 'MySQL'],
+      title: "Portfolio Tracker",
+      description:
+        "A full-stack application to manage and track stock portfolio holdings with real-time stock price integration.",
+      languages: ["ReactJS", "Java", "Spring Boot", "MySQL"],
       image: PortfolioTracker,
-      github: 'https://github.com/VighneshVejandla/portifolioTracker',
+      github: "https://github.com/VighneshVejandla/portifolioTracker",
     },
     {
-      title: 'Low-Light Image Enhancer',
-      description: 'A Flask-based tool for enhancing low-light images using deep learning models like MFDNet.',
-      languages: ['Python', 'Flask'],
+      title: "Low-Light Image Enhancer",
+      description:
+        "A Flask-based tool for enhancing low-light images using deep learning models like MFDNet.",
+      languages: ["Python", "Flask"],
       image: LOL,
-      github: 'https://github.com/VighneshVejandla/Low-Light-Image-Enhancement',
+      github: "https://github.com/VighneshVejandla/Low-Light-Image-Enhancement",
     },
     {
-      title: 'APIs Using Golang & PostgreSQL',
-      description: 'A backend project utilizing Go and PostgreSQL to build a robust RESTful API for managing data efficiently.',
-      languages: ['Go', 'PostgreSQL'],
+      title: "APIs Using Golang & PostgreSQL",
+      description:
+        "A backend project utilizing Go and PostgreSQL to build a robust RESTful API for managing data efficiently.",
+      languages: ["Go", "PostgreSQL"],
       image: GoLang,
-      github: 'https://github.com/VighneshVejandla/APIs_Using_Golang_PostgreSQL',
+      github:
+        "https://github.com/VighneshVejandla/APIs_Using_Golang_PostgreSQL",
     },
     {
-      title: 'Bluestock Fintech Internship Project',
-      description: 'Developed and optimized backend services to enhance financial data processing and improve API response times for fintech applications.',
-      languages: ['Java', 'Spring Boot', 'MySQL'],
+      title: "Bluestock Fintech Internship Project",
+      description:
+        "Developed and optimized backend services to enhance financial data processing and improve API response times for fintech applications.",
+      languages: ["Python", "Django", "MySQL"],
       image: BlueStock,
-      github: 'https://github.com/VighneshVejandla/BlueStock_fintech',
+      github: "https://github.com/VighneshVejandla/BlueStock_fintech",
     },
     {
-      "title": "Chess-like Game Project",
-      "description": "Developed a real-time multiplayer chess-like game in React, featuring 5 characters (3 pawns, 2 heroes) on a 5x5 board, with WebSocket integration for player connection and move synchronization.",
-      "languages": ["React", "JavaScript", "CSS", "WebSocket"],
-      "image": ChessGame,
-      "github": "https://github.com/VighneshVejandla/hitwicket"
+      title: "Chess-like Game Project",
+      description:
+        "Developed a real-time multiplayer chess-like game in React, featuring 5 characters (3 pawns, 2 heroes) on a 5x5 board, with WebSocket integration for player connection and move synchronization.",
+      languages: ["React", "JavaScript", "CSS", "WebSocket"],
+      image: ChessGame,
+      github: "https://github.com/VighneshVejandla/hitwicket",
     },
     {
-      "title": "Aquaculture Website",
-      "description": "Developed a website focused on aquaculture, featuring information on aquaculture practices, sustainability, and industry insights.",
-      "languages": ["HTML", "CSS", "JavaScript"],
-      "image": AquaCulture,
-      "github": "https://github.com/VighneshVejandla/Aquaculture--website"
+      title: "Aquaculture Website",
+      description:
+        "Developed a website focused on aquaculture, featuring information on aquaculture practices, sustainability, and industry insights.",
+      languages: ["HTML", "CSS", "JavaScript"],
+      image: AquaCulture,
+      github: "https://github.com/VighneshVejandla/Aquaculture--website",
     },
   ];
 
